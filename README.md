@@ -1,6 +1,6 @@
 # Workflow Automation Platform
 
-A small, honest version of a workflow-automation tool like n8n / Dify. A user builds a
+A workflow-automation tool like n8n / Dify. A user builds a
 workflow on a canvas by adding **nodes** (each node is one action), connecting them in order,
 and pressing **Run Workflow**. The platform validates the graph, runs the nodes in dependency
 order — passing each node's output into the next — and shows the status, output, and any error
@@ -128,12 +128,6 @@ frontend/  React + Vite + React Flow canvas
 docs/      demo workflow + screenshots
 ```
 
-## What is intentionally left out (and how it would scale)
-
-This is a single-process, sequential prototype. A production system (n8n, Dify) adds a job
-queue and worker pool (e.g. Redis) for parallel and horizontal execution, authentication and
-multi-tenancy, and richer control-flow nodes (branching, loops). The engine here is structured
-so those are additive rather than rewrites.
 
 ## Demo
 
