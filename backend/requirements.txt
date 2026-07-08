@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pypdf
+
+# Optional AI backends, only needed when PROVIDER is not "mock":
+#   PROVIDER=anthropic  -> anthropic
+#   PROVIDER=local      -> transformers + torch
+anthropic
+transformers
+torch
