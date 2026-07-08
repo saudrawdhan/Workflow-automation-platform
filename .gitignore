@@ -1,0 +1,31 @@
+# --- Private / internal — FOR SAUD'S EYES ONLY, never publish to any repo ---
+# All planning docs, the learn-by-building course, and technical deep-dives live in _private/.
+# Keeping them in one ignored folder makes it impossible to leak them by accident.
+_private/
+*_Technical_Deepdive*.md
+*_DEEPDIVE*.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+backend/data/
+
+# Node / Vite
+node_modules/
+dist/
+*.local
+frontend/dev.cmd
+backend/dev.cmd
+
+# Environment
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Claude Code local tooling (not part of the shipped project)
+.claude/
